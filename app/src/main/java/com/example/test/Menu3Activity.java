@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.activity3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,5 +9,6 @@ public class Menu3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu3);
     }
 }

@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
+    tools:context=".Menu1Activity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,9 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="@string/jdl"
+            android:text="@string/jdl1"
             android:textAlignment="center"
-            android:textColor="@color/login"
+            android:textColor="@color/colorPrimary"
             android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +40,7 @@
                     android:id="@+id/textView"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/un"
+                    android:text="@string/nm"
                     android:textColor="@color/label"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +51,7 @@
                     app:layout_constraintVertical_bias="0.192"/>
 
                 <EditText
-                    android:id="@+id/editUN"
+                    android:id="@+id/editnm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -62,7 +60,7 @@
                     android:layout_marginBottom="8dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:hint="@string/txtun"
+                    android:hint="@string/txtnama"
                     android:inputType="textPersonName"
                     android:textColor="@color/txt"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +79,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ps"
+                    android:text="@string/almt"
                     android:textColor="@color/label"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -92,7 +90,7 @@
                     app:layout_constraintVertical_bias="0.072" />
 
                 <EditText
-                    android:id="@+id/editPass"
+                    android:id="@+id/editalamat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -100,9 +98,7 @@
                     android:layout_marginEnd="8dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:hint="@string/txtpass"
-                    android:inputType="textPassword"
-                    android:textColor="@color/txt"
+                    android:hint="@string/txtalmt"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.947"
@@ -110,31 +106,55 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.423" />
             </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tlp"
+                    android:textColor="@color/label"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.192"/>
+
+                <EditText
+                    android:id="@+id/editnohp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/txttlp"
+                    android:inputType="number"
+                    android:textColor="@color/txt"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.944"
+                    app:layout_constraintStart_toStartOf="@id/textView"
+                    app:layout_constraintTop_toBottomOf="@id/textView2"
+                    app:layout_constraintVertical_bias="0.123" />
+
+            </TableRow>
         </TableLayout>
-
-        <TextView
-            android:id="@+id/hsltxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="@string/hsl"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.208"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
         <Button
             android:id="@+id/btnok"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="66dp"
             android:layout_marginStart="300dp"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="200dp"
-            android:background="@color/login"
+            android:background="@color/colorPrimaryDark"
             android:text="@string/btn"
+            android:textColor="@color/txtcolor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.971"
