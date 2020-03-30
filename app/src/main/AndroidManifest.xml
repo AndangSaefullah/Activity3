@@ -12,8 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Menu3Activity"
+            android:label="Menu3"/>
+        <activity android:name=".Menu2Activity"
+            android:label="Menu2"/>
+        <activity android:name=".FormActivity"
+            android:label="Form"/>
+        <activity android:name="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
